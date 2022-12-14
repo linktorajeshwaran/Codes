@@ -1,18 +1,15 @@
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 
 public class InterviewCodingQuestions {
 	
+	//Reverse a string using java8
 	static Function<String,String> strRev = s -> {
 		System.out.println(new StringBuilder(s).reverse().toString());
 		return "";
@@ -23,6 +20,7 @@ public class InterviewCodingQuestions {
 	static void stringReverse(String t) {
 		strRev.apply(t);
 	}
+	
 	
 	static void swapWithoutTemp(int a , int b) {
 		b = a+b;
